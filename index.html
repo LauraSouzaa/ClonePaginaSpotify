@@ -1,240 +1,328 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Spotify Premium para Estudantes</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header>
+        <nav aria-label="Navegação principal">
 
-<header>
-
-    <nav aria-label="Navegação principal">
-        <a href="#" aria-label="Spotify">
-            <img src="./img/logo-spotify.webp" alt="Logo do Spotify">
-        </a>
-
-        <div>
-            <a href="#">Planos Premium</a>
-            <a href="#">Suporte</a>
-            <a href="#">Baixar</a>
-            <a href="#">Inscrever-se</a>
-            <a href="#">Entrar</a>
-        </div>
-
-    </nav>
-
-</header>
-
-<main>
-
-    <section class="beneficios">
-
-        <h2>A trilha sonora perfeita para os seus estudos</h2>
-
-        <div class="beneficios-container">
-
-            <article class="beneficio">
-                <h3>Ouça músicas sem anúncios</h3>
-                <p>
-                    Estude até anoitecer. Dance até o sol raiar.
-                </p>
-            </article>
-
-            <article class="beneficio">
-                <h3>Ouça offline</h3>
-                <p>
-                    Nunca mais se preocupe com o pacote de dados.
-                </p>
-            </article>
-
-            <article class="beneficio">
-                <h3>Música para todos os momentos</h3>
-                <p>
-                    Milhões de músicas e playlists incríveis.
-                </p>
-            </article>
-
-            <article class="beneficio">
-                <h3>Fácil de ouvir</h3>
-                <p>
-                    O Premium oferece ainda mais qualidade de som
-                    em cada música.
-                </p>
-            </article>
-
-        </div>
-    </section>
-
-
-    <section class="verificacao" id="verificacao">
-
-        <h2>Verifique sua elegibilidade</h2>
-
-        <p>
-            Informe seu e-mail para iniciar a verificação.
-        </p>
-
-        <form>
+            <a href="#" aria-label="Spotify">
+                <img src="./img/logo-spotify.webp" alt="Logo do Spotify">
+            </a>
 
             <div>
-                <label for="email">E-mail:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Digite seu e-mail"
-                    required
-                >
+                <a href="#">Planos Premium</a>
+                <a href="#">Suporte</a>
+                <a href="#">Baixar</a>
+                <a href="#">Inscrever-se</a>
+                <a href="#">Entrar</a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="beneficios">
+
+            <h2>
+                A trilha sonora perfeita para os seus estudos
+            </h2>
+
+            <div class="beneficios-container">
+
+                <article class="beneficio">
+
+                    <h3>
+                        Ouça músicas sem anúncios
+                    </h3>
+
+                    <p>
+                        Estude até anoitecer. Dance até o sol raiar.
+                    </p>
+
+                </article>
+
+
+                <article class="beneficio">
+
+                    <h3>
+                        Ouça offline
+                    </h3>
+
+                    <p>
+                        Nunca mais se preocupe com o pacote de dados.
+                    </p>
+
+                </article>
+
+
+                <article class="beneficio">
+
+                    <h3>
+                        Música para todos os momentos
+                    </h3>
+
+                    <p>
+                        Milhões de músicas e playlists incríveis.
+                    </p>
+
+                </article>
+
+
+                <article class="beneficio">
+
+                    <h3>
+                        Fácil de ouvir
+                    </h3>
+
+                    <p>
+                        O Premium oferece ainda mais qualidade de som
+                        em cada música.
+                    </p>
+
+                </article>
+
             </div>
 
-            <button type="submit">Verificar</button>
+        </section>
 
-        </form>
-    </section>
+        <section class="hero">
+
+            <h1>
+                Estudantes têm direito a 1 mês de Premium grátis
+            </h1>
+
+            <h2>
+                Depois, apenas R$ 12,90/mês. Cancele quando quiser.
+            </h2>
+
+            <a href="#verificacao">
+                Seja Premium
+            </a>
+
+            <p>
+                Oferta reservada para estudantes matriculados em
+                instituições de ensino superior credenciadas e elegíveis.
+                Oferta não disponível para usuários que já experimentaram
+                o Premium. Sujeito aos Termos e Condições do desconto
+                para estudantes universitários do Spotify.
+            </p>
+
+        </section>
+
+        <section class="verificacao" id="verificacao">
+
+            <h2>
+                Verifique sua elegibilidade
+            </h2>
+
+            <p>
+                Informe seu e-mail para iniciar a verificação.
+            </p>
+
+            <form>
+
+                <div>
+
+                    <label for="email">
+                        E-mail:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+                </div>
+
+                <button type="submit">
+                    Verificar
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="faq">
+
+            <h2>
+                Alguma dúvida?
+            </h2>
+
+            <p>
+                Nós temos as respostas
+            </p>
 
 
-    <section class="faq">
+            <article class="faq-item">
 
-    <section class="hero">
-        <h1>Estudantes têm direito a 1 mês de Premium grátis</h1>
+                <h3>
+                    Eu tenho direito a esse plano?
+                </h3>
 
-        <h2>Depois, apenas R$ 12,90/mês. Cancele quando quiser.</h2>
+                <p>
+                    Sim, desde que você esteja matriculado em uma
+                    instituição de ensino superior credenciada e elegível
+                    para a oferta e tenha mais de 18 anos.
+                </p>
 
-        <a href="#verificacao">Seja Premium</a>
+            </article>
+
+
+            <article class="faq-item">
+
+                <h3>
+                    Como vocês confirmam meu status de estudante?
+                </h3>
+
+                <p>
+                    O status de estudante e a elegibilidade da instituição
+                    podem ser verificados por meio de um serviço de
+                    terceiros chamado SheerID.
+                </p>
+
+            </article>
+
+
+            <article class="faq-item">
+
+                <h3>
+                    O que acontece quando eu me formar?
+                </h3>
+
+                <p>
+                    O desconto para estudantes pode continuar disponível
+                    enquanto você atender aos requisitos da oferta,
+                    respeitando o período máximo permitido.
+                </p>
+
+            </article>
+
+
+            <article class="faq-item">
+
+                <h3>
+                    Quanto vou pagar e quando?
+                </h3>
+
+                <p>
+                    O Premium Universitário custa R$ 12,90 por mês,
+                    conforme a oferta vigente. Você pode cancelar
+                    quando quiser.
+                </p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <section>
+
+                <h2>
+                    Empresa
+                </h2>
+
+                <a href="#">Sobre</a>
+                <a href="#">Empregos</a>
+                <a href="#">For the Record</a>
+
+            </section>
+
+            <section>
+
+                <h2>
+                    Comunidades
+                </h2>
+
+                <a href="#">Para artistas</a>
+                <a href="#">Para criadores</a>
+                <a href="#">Para autores</a>
+                <a href="#">Desenvolvedores</a>
+                <a href="#">Publicidade</a>
+                <a href="#">Investidores</a>
+                <a href="#">Fornecedores</a>
+
+            </section>
+
+            <section>
+
+                <h2>
+                    Links úteis
+                </h2>
+
+                <a href="#">Suporte</a>
+                <a href="#">Player da Web</a>
+                <a href="#">Aplicativo móvel grátis</a>
+                <a href="#">Importar suas músicas</a>
+
+            </section>
+
+            <section>
+
+                <h2>
+                    Planos Spotify
+                </h2>
+
+                <a href="#">Premium Individual</a>
+                <a href="#">Premium Duo</a>
+                <a href="#">Premium Família</a>
+                <a href="#">Premium Universitário</a>
+                <a href="#">Spotify Free</a>
+
+            </section>
+
+        </div>
+
+        <section class="footer-legal">
+
+            <a href="#">Termos Legais</a>
+
+            <a href="#">
+                Centro de Segurança e Privacidade
+            </a>
+
+            <a href="#">
+                Política de Privacidade
+            </a>
+
+            <a href="#">Cookies</a>
+
+            <a href="#">Sobre anúncios</a>
+
+            <a href="#">Acessibilidade</a>
+
+        </section>
+
+        <section class="footer-country">
+
+            <a href="#">
+                Brasil (Português)
+            </a>
+
+        </section>
+
 
         <p>
-            Oferta reservada para estudantes matriculados em
-            instituições de ensino superior credenciadas e elegíveis.
-            Oferta não disponível para usuários que já experimentaram
-            o Premium. Sujeito aos Termos e Condições do desconto
-            para estudantes universitários do Spotify.
+            © 2026 Spotify AB
         </p>
-    </section>
-        <h2>Alguma dúvida?</h2>
 
-        <p>Nós temos as respostas</p>
-
-        <article class="faq-item">
-            <h3>Eu tenho direito a esse plano?</h3>
-
-            <p>
-                Sim, desde que você esteja matriculado em uma
-                instituição de ensino superior credenciada e elegível
-                para a oferta e tenha mais de 18 anos.
-            </p>
-        </article>
-
-        <article class="faq-item">
-            <h3>Como vocês confirmam meu status de estudante?</h3>
-
-            <p>
-                O status de estudante e a elegibilidade da instituição
-                podem ser verificados por meio de um serviço de
-                terceiros chamado SheerID.
-            </p>
-        </article>
-
-        <article class="faq-item">
-            <h3>O que acontece quando eu me formar?</h3>
-
-            <p>
-                O desconto para estudantes pode continuar disponível
-                enquanto você atender aos requisitos da oferta,
-                respeitando o período máximo permitido.
-            </p>
-        </article>
-
-        <article class="faq-item">
-            <h3>Quanto vou pagar e quando?</h3>
-
-            <p>
-                O Premium Universitário custa R$ 12,90 por mês,
-                conforme a oferta vigente. Você pode cancelar
-                quando quiser.
-            </p>
-        </article>
-
-    </section>
-
-</main>
-
-
-<footer>
-
-    <div class="footer-container">
-
-        <section>
-            <h2>Empresa</h2>
-
-            <a href="#">Sobre</a>
-            <a href="#">Empregos</a>
-            <a href="#">For the Record</a>
-        </section>
-
-
-        <section>
-            <h2>Comunidades</h2>
-
-            <a href="#">Para artistas</a>
-            <a href="#">Para criadores</a>
-            <a href="#">Para autores</a>
-            <a href="#">Desenvolvedores</a>
-            <a href="#">Publicidade</a>
-            <a href="#">Investidores</a>
-            <a href="#">Fornecedores</a>
-        </section>
-
-
-        <section>
-            <h2>Links úteis</h2>
-
-            <a href="#">Suporte</a>
-            <a href="#">Player da Web</a>
-            <a href="#">Aplicativo móvel grátis</a>
-            <a href="#">Importar suas músicas</a>
-        </section>
-
-
-        <section>
-            <h2>Planos Spotify</h2>
-
-            <a href="#">Premium Individual</a>
-            <a href="#">Premium Duo</a>
-            <a href="#">Premium Família</a>
-            <a href="#">Premium Universitário</a>
-            <a href="#">Spotify Free</a>
-        </section>
-
-    </div>
-
-
-    <section class="footer-legal">
-
-        <a href="#">Termos Legais</a>
-        <a href="#">Centro de Segurança e Privacidade</a>
-        <a href="#">Política de Privacidade</a>
-        <a href="#">Cookies</a>
-        <a href="#">Sobre anúncios</a>
-        <a href="#">Acessibilidade</a>
-
-    </section>
-
-
-    <section class="footer-country">
-
-        <a href="#">Brasil (Português)</a>
-
-    </section>
-
-    <p>© 2026 Spotify AB</p>
-
-</footer>
+    </footer>
 
 </body>
 
