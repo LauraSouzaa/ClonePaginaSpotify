@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Spotify Premium para Estudantes</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
+
         <nav aria-label="Navegação principal">
 
             <a href="#" aria-label="Spotify">
@@ -25,20 +26,22 @@
                 <a href="#">Inscrever-se</a>
                 <a href="#">Entrar</a>
             </div>
+
         </nav>
 
     </header>
 
+
     <main>
-        <section class="beneficios">
+        <section class="Conteudo principals">
 
             <h2>
                 A trilha sonora perfeita para os seus estudos
             </h2>
 
-            <div class="beneficios-container">
+            <div class="Conteudo principals-container">
 
-                <article class="beneficio">
+                <article class="Conteudo principal">
 
                     <h3>
                         Ouça músicas sem anúncios
@@ -51,7 +54,7 @@
                 </article>
 
 
-                <article class="beneficio">
+                <article class="Conteudo principal">
 
                     <h3>
                         Ouça offline
@@ -64,7 +67,7 @@
                 </article>
 
 
-                <article class="beneficio">
+                <article class="Conteudo principal">
 
                     <h3>
                         Música para todos os momentos
@@ -77,7 +80,7 @@
                 </article>
 
 
-                <article class="beneficio">
+                <article class="Conteudo principal">
 
                     <h3>
                         Fácil de ouvir
@@ -128,29 +131,26 @@
                 Informe seu e-mail para iniciar a verificação.
             </p>
 
-            <form>
+           <form id="formulario-email">
+             <label for="email">
+                E-mail
+            </label>
 
-                <div>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required
+            >
 
-                    <label for="email">
-                        E-mail:
-                    </label>
+            <button type="submit">
+                Verificar
+            </button>
 
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Digite seu e-mail"
-                        required
-                    >
+            <p id="mensagem-formulario" aria-live="polite"></p>
 
-                </div>
-
-                <button type="submit">
-                    Verificar
-                </button>
-
-            </form>
+    </form>
 
         </section>
 
@@ -244,6 +244,7 @@
 
             </section>
 
+
             <section>
 
                 <h2>
@@ -260,6 +261,7 @@
 
             </section>
 
+
             <section>
 
                 <h2>
@@ -272,6 +274,7 @@
                 <a href="#">Importar suas músicas</a>
 
             </section>
+
 
             <section>
 
@@ -289,9 +292,12 @@
 
         </div>
 
+
         <section class="footer-legal">
 
-            <a href="#">Termos Legais</a>
+            <a href="#">
+                Termos Legais
+            </a>
 
             <a href="#">
                 Centro de Segurança e Privacidade
@@ -301,13 +307,20 @@
                 Política de Privacidade
             </a>
 
-            <a href="#">Cookies</a>
+            <a href="#">
+                Cookies
+            </a>
 
-            <a href="#">Sobre anúncios</a>
+            <a href="#">
+                Sobre anúncios
+            </a>
 
-            <a href="#">Acessibilidade</a>
+            <a href="#">
+                Acessibilidade
+            </a>
 
         </section>
+
 
         <section class="footer-country">
 
@@ -323,6 +336,9 @@
         </p>
 
     </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 
