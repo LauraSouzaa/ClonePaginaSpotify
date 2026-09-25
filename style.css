@@ -1,0 +1,660 @@
+:root {
+    --preto: #000000;
+    --branco: #ffffff;
+    --verde: #1ed760;
+    --verde-claro: #91EEDA;
+    --cinza: #919496;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    width: 100%;
+    background-color: #000000;
+    padding: 100px 24px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+
+/* Logo */
+
+header nav .logo {
+    transform: translateX(-135px);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header nav .logo img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+header nav .logo span {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* Links */
+
+header nav div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+header nav div a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+header nav div a:hover {
+    color: #1ed760;
+}
+
+header nav div a:focus {
+    outline: 2px solid #1ed760;
+    outline-offset: 4px;
+}
+
+
+/* Separador */
+
+.separador {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+
+/* =========================
+   CABEÇALHO - DESKTOP
+========================= */
+
+@media (min-width: 768px) {
+
+    header {
+        padding: 20px 24px;
+    }
+
+    header nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    header nav div {
+        transform: translateX(95px);
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+}
+
+
+/* =========================
+   BENEFÍCIOS
+========================= */
+
+.beneficios {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.beneficios h2 {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+.beneficios-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.beneficio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.beneficio img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin-top: 45px;
+    margin-bottom: 8px;
+}
+
+.beneficio h3 {
+    width: 220px;
+    min-height: 44px;
+    margin: 0 0 5px;
+    font-size: 17px;
+    line-height: 1.3;
+    color: #000000;
+}
+
+.beneficio p {
+    width: 220px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+
+/* =========================
+   BENEFÍCIOS - DESKTOP
+========================= */
+
+@media (min-width: 768px) {
+
+    .beneficios {
+        padding: 80px 40px;
+    }
+
+    .beneficios h2 {
+        font-size: 38px;
+        margin-bottom: 45px;
+    }
+
+    .beneficios-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 45px;
+        max-width: 1050px;
+        margin: 0 auto;
+    }
+
+    .beneficio {
+        flex: 1;
+        max-width: 220px;
+    }
+
+    .beneficio img {
+        width: 110px;
+        height: 110px;
+        margin-top: 45px;
+        margin-bottom: 8px;
+    }
+
+    .beneficio h3 {
+        width: 220px;
+        min-height: 44px;
+        margin-bottom: 5px;
+        font-size: 17px;
+        line-height: 1.3;
+    }
+
+    .beneficio p {
+        width: 220px;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+}
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    background-color: #91EEDA;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    font-size: 36px;
+    line-height: 1.1;
+    color: #000000;
+}
+
+.hero h2 {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #000000;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 14px 28px;
+    margin-bottom: 25px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.hero a:hover {
+    transform: scale(1.03);
+}
+
+.hero a:focus {
+    outline: 2px solid #000000;
+    outline-offset: 4px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+
+/* =========================
+   HERO - DESKTOP
+========================= */
+
+@media (min-width: 768px) {
+
+    .hero {
+        padding: 90px 40px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero a {
+        padding: 15px 32px;
+        font-size: 16px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+}
+
+/* PERGUNTAS FREQUENTES */
+.faq {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.faq > h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #000000;
+}
+
+.faq > p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.faq-item {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px 0;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: left;
+}
+
+.faq-item h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #000000;
+}
+
+.faq-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+@media (min-width: 768px) {
+    .faq {
+        padding: 80px 40px;
+    }
+
+    .faq > h2 {
+        font-size: 40px;
+    }
+
+    .faq > p {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .faq-item {
+        padding: 30px 10px;
+    }
+
+    .faq-item h3 {
+        font-size: 22px;
+    }
+
+    .faq-item p {
+        font-size: 17px;
+        max-width: 800px;
+    }
+}
+
+
+/* RODAPÉ */
+footer {
+    padding: 60px 20px 30px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-container section {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-container h2 {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #919496;
+    text-transform: uppercase;
+}
+
+.footer-container a {
+    width: fit-content;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-container a:hover {
+    color: #1ed760;
+}
+
+.footer-container a:focus {
+    outline: 2px solid #1ed760;
+    outline-offset: 4px;
+}
+
+
+/* FORMULÁRIO DO RODAPÉ */
+.formulario {
+    max-width: 1100px;
+    margin: 50px auto 0;
+    padding: 30px 0;
+    border-top: 1px solid #292929;
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.formulario label {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.formulario input {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.formulario input:focus {
+    outline: 2px solid #1ed760;
+    outline-offset: 2px;
+}
+
+.formulario button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    background-color: #1ed760;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    transform: scale(1.03);
+}
+
+#mensagem-formulario {
+    min-height: 20px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #1ed760;
+}
+
+
+/* PARTE LEGAL DO RODAPÉ */
+.footer-legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    max-width: 1100px;
+    margin: 40px auto 20px;
+    padding-top: 25px;
+    border-top: 1px solid #292929;
+}
+
+.footer-legal a {
+    color: #919496;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-legal a:hover {
+    color: #ffffff;
+}
+
+
+/* PAÍS */
+.footer-country {
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+.footer-country a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-country a:hover {
+    color: #1ed760;
+}
+
+
+/* COPYRIGHT */
+footer > p {
+    max-width: 1100px;
+    margin: 20px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #292929;
+    color: #919496;
+    font-size: 12px;
+}
+
+
+@media (min-width: 768px) {
+    footer {
+        padding: 80px 40px 40px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+    }
+
+    .formulario form {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .formulario input {
+        width: 300px;
+    }
+
+    .formulario button {
+        padding: 12px 28px;
+    }
+
+    .footer-legal {
+        gap: 24px;
+    }
+}
+
+/* FORMULÁRIO */
+.formulario {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.formulario label {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.formulario input {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.formulario input:focus {
+    outline: 2px solid #1ed760;
+    outline-offset: 2px;
+}
+
+.formulario button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    background-color: #1ed760;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    transform: scale(1.03);
+}
+
+#mensagem-formulario {
+    min-height: 20px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #1ed760;
+}
+
+@media (min-width: 768px) {
+    .formulario {
+        padding: 60px 40px;
+    }
+
+    .formulario form {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario input {
+        width: 300px;
+    }
+}

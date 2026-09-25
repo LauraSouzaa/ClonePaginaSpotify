@@ -5,34 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Premium para Estudantes</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-
         <nav aria-label="Navegação principal">
-
-            <a href="#" aria-label="Spotify">
-                <img src="./img/logo-spotify.webp" alt="Logo do Spotify">
+            <a href="#" class="logo" aria-label="Spotify">
+                <img
+                    src="./img/logo-spotify.webp"
+                    alt="Logo do Spotify"
+                >
+                <span>Spotify</span>
             </a>
 
             <div>
                 <a href="#">Planos Premium</a>
                 <a href="#">Suporte</a>
                 <a href="#">Baixar</a>
+
+                <span
+                    class="separador"
+                    aria-hidden="true"
+                >
+                    |
+                </span>
+
                 <a href="#">Inscrever-se</a>
                 <a href="#">Entrar</a>
             </div>
-
         </nav>
-
     </header>
 
-
     <main>
+
         <section class="beneficios">
 
             <h2>
@@ -42,6 +49,10 @@
             <div class="beneficios-container">
 
                 <article class="beneficio">
+                    <img
+                        src="./img/sem-anuncio.png"
+                        alt="Ícone representando músicas sem anúncios"
+                    >
 
                     <h3>
                         Ouça músicas sem anúncios
@@ -50,11 +61,13 @@
                     <p>
                         Estude até anoitecer. Dance até o sol raiar.
                     </p>
-
                 </article>
 
-
                 <article class="beneficio">
+                    <img
+                        src="./img/ouca-offline.png"
+                        alt="Ícone representando reprodução de músicas offline"
+                    >
 
                     <h3>
                         Ouça offline
@@ -63,11 +76,13 @@
                     <p>
                         Nunca mais se preocupe com o pacote de dados.
                     </p>
-
                 </article>
 
-
                 <article class="beneficio">
+                    <img
+                        src="./img/musica-todos-momentos.png"
+                        alt="Ícone representando músicas e playlists"
+                    >
 
                     <h3>
                         Música para todos os momentos
@@ -76,10 +91,13 @@
                     <p>
                         Milhões de músicas e playlists incríveis.
                     </p>
-
                 </article>
 
                 <article class="beneficio">
+                    <img
+                        src="./img/qualidade-musica.png"
+                        alt="Ícone representando qualidade de som"
+                    >
 
                     <h3>
                         Fácil de ouvir
@@ -89,7 +107,6 @@
                         O Premium oferece ainda mais qualidade de som
                         em cada música.
                     </p>
-
                 </article>
 
             </div>
@@ -106,7 +123,7 @@
                 Depois, apenas R$ 12,90/mês. Cancele quando quiser.
             </h2>
 
-            <a href="#verificacao">
+            <a href="#">
                 Seja Premium
             </a>
 
@@ -120,39 +137,6 @@
 
         </section>
 
-        <section class="verificacao" id="verificacao">
-
-            <h2>
-                Verifique sua elegibilidade
-            </h2>
-
-            <p>
-                Informe seu e-mail para iniciar a verificação.
-            </p>
-
-           <form id="formulario-email">
-             <label for="email">
-                E-mail
-            </label>
-
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Digite seu e-mail"
-                required
-            >
-
-            <button type="submit">
-                Verificar
-            </button>
-
-            <p id="mensagem-formulario" aria-live="polite"></p>
-
-    </form>
-
-        </section>
-
         <section class="faq">
 
             <h2>
@@ -162,7 +146,6 @@
             <p>
                 Nós temos as respostas
             </p>
-
 
             <article class="faq-item">
 
@@ -178,7 +161,6 @@
 
             </article>
 
-
             <article class="faq-item">
 
                 <h3>
@@ -193,7 +175,6 @@
 
             </article>
 
-
             <article class="faq-item">
 
                 <h3>
@@ -207,7 +188,6 @@
                 </p>
 
             </article>
-
 
             <article class="faq-item">
 
@@ -243,7 +223,6 @@
 
             </section>
 
-
             <section>
 
                 <h2>
@@ -260,7 +239,6 @@
 
             </section>
 
-
             <section>
 
                 <h2>
@@ -273,7 +251,6 @@
                 <a href="#">Importar suas músicas</a>
 
             </section>
-
 
             <section>
 
@@ -291,12 +268,42 @@
 
         </div>
 
+        <section class="formulario">
+
+            <h2>
+                Quer receber novidades?
+            </h2>
+
+            <form id="formulario-email">
+
+                <label for="email">
+                    E-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+                <button type="submit">
+                    Inscrever-se
+                </button>
+
+                <p
+                    id="mensagem-formulario"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </section>
 
         <section class="footer-legal">
 
-            <a href="#">
-                Termos Legais
-            </a>
+            <a href="#">Termos Legais</a>
 
             <a href="#">
                 Centro de Segurança e Privacidade
@@ -320,7 +327,6 @@
 
         </section>
 
-
         <section class="footer-country">
 
             <a href="#">
@@ -329,13 +335,11 @@
 
         </section>
 
-
         <p>
             © 2026 Spotify AB
         </p>
 
     </footer>
-
 
     <script src="script.js"></script>
 
