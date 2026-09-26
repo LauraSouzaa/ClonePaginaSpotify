@@ -418,20 +418,21 @@ footer {
 .formulario {
     max-width: 1100px;
     margin: 50px auto 0;
-    padding: 30px 0;
+    padding: 50px 20px;
     border-top: 1px solid #292929;
+    text-align: center;
 }
 
 .formulario h2 {
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 24px;
     color: #ffffff;
 }
 
 .formulario form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
 }
 
@@ -531,8 +532,13 @@ footer > p {
         gap: 50px;
     }
 
+    .formulario {
+        padding: 60px 40px;
+    }
+
     .formulario form {
         flex-direction: row;
+        justify-content: center;
         align-items: center;
     }
 
@@ -549,80 +555,6 @@ footer > p {
     }
 }
 
-.formulario {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.formulario h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #ffffff;
-}
-
-.formulario form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-}
-
-.formulario label {
-    font-size: 14px;
-    color: #ffffff;
-}
-
-.formulario input {
-    width: 100%;
-    max-width: 350px;
-    padding: 12px 15px;
-    border: none;
-    border-radius: 25px;
-    font-size: 14px;
-}
-
-.formulario input:focus {
-    outline: 2px solid #1ed760;
-    outline-offset: 2px;
-}
-
-.formulario button {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 25px;
-    background-color: #1ed760;
-    color: #000000;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.formulario button:hover {
-    transform: scale(1.03);
-}
-
-#mensagem-formulario {
-    min-height: 20px;
-    margin-top: 5px;
-    font-size: 13px;
-    color: #1ed760;
-}
-
-@media (min-width: 768px) {
-    .formulario {
-        padding: 60px 40px;
-    }
-
-    .formulario form {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .formulario input {
-        width: 300px;
-    }
-}
 
 /* TIMER DE ESTUDOS */
 
