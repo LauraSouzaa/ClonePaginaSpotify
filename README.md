@@ -1,4 +1,4 @@
-# Projeto — Site Spotify Student
+# Projeto — Site Spotify Universitário
 
 ## Integrantes
 
@@ -38,9 +38,9 @@ Escolhemos essa página por apresentar um layout moderno, organizado e visualmen
 
 ### Justificativa
 
-A estrutura HTML foi organizada utilizando elementos semânticos para representar as diferentes partes da página. O `header` será utilizado para o cabeçalho e a navegação, o `main` para o conteúdo principal, as `section` para dividir os blocos da página, os `article` para representar conteúdos individuais e o `footer` para o rodapé.
+A estrutura HTML foi organizada utilizando elementos semânticos para representar as diferentes partes da página. O `header` foi utilizado para o cabeçalho e a navegação, o `main` para o conteúdo principal, as `section` para dividir os blocos da página, os `article` para representar conteúdos individuais e o `footer` para o rodapé.
 
-O formulário será estruturado com `label` associado aos campos por meio dos atributos `for` e `id`. Também será utilizado `type="email"` no campo de e-mail para permitir uma validação básica do navegador.
+O formulário foi estruturado com `label` associado ao campo por meio dos atributos `for` e `id`. O campo de e-mail utiliza `type="email"` para permitir a validação do endereço informado.
 
 ---
 
@@ -48,16 +48,16 @@ O formulário será estruturado com `label` associado aos campos por meio dos at
 
 ### Checklist
 
-* [ ] Cabeçalho semelhante ao site original
-* [ ] Cores semelhantes à referência
-* [ ] Tipografia semelhante
-* [ ] Espaçamentos semelhantes
-* [ ] Chamada principal em destaque
-* [ ] Seção de benefícios
-* [ ] Área de perguntas frequentes
-* [ ] Botões semelhantes à referência
-* [ ] Rodapé organizado de forma semelhante
-* [ ] Organização geral semelhante à página original
+* [x] Cabeçalho semelhante ao site original
+* [x] Cores semelhantes à referência
+* [x] Tipografia semelhante
+* [x] Espaçamentos semelhantes
+* [x] Chamada principal em destaque
+* [x] Seção de benefícios
+* [x] Área de perguntas frequentes
+* [x] Botões semelhantes à referência
+* [x] Rodapé organizado de forma semelhante
+* [x] Organização geral semelhante à página original
 
 ### Justificativa
 
@@ -65,7 +65,7 @@ A página foi desenvolvida observando a organização visual do site de referên
 
 Foram utilizados como base elementos visuais presentes na página do Spotify, como o cabeçalho, a chamada principal, os benefícios, as perguntas frequentes, os botões e a organização do rodapé.
 
-Pequenas diferenças poderão existir para adaptar o conteúdo e o desenvolvimento às necessidades do projeto.
+Foram feitas pequenas adaptações para adequar o conteúdo e a implementação às necessidades do projeto.
 
 ---
 
@@ -73,19 +73,23 @@ Pequenas diferenças poderão existir para adaptar o conteúdo e o desenvolvimen
 
 ### Site original
 
-![Site original](./img/SiteOriginal1.png)
+![Site original 1](./img/SiteOriginal1.png)
+
+![Site original 2](./img/SiteOriginal2.png)
+
+![Site original 3](./img/SiteOriginal3.png)
+
+![Site original 4](./img/SiteOriginal4.png)
 
 ### Site desenvolvido
 
-![Site desenvolvido](./img/SiteResultado1.png)
+![Site desenvolvido 1](./img/siteDesenvolvido1.png)
 
----
+![Site desenvolvido 2](./img/siteDesenvolvido2.png)
 
-## Comparação lado a lado
+![Site desenvolvido 3](./img/siteDesenvolvido3.png)
 
-| Site original                             | Site desenvolvido                              |
-| ----------------------------------------- | ---------------------------------------------- |
-| ![Site original](./img/SiteOriginal1.png) | ![Site desenvolvido](./img/SiteResultado1.png) |
+![Site desenvolvido 4](./img/siteDesenvolvido4.png)
 
 ---
 
@@ -93,29 +97,29 @@ Pequenas diferenças poderão existir para adaptar o conteúdo e o desenvolvimen
 
 ### Checklist
 
-* [ ] Seletores por classe
-* [ ] Seletores descendentes
-* [ ] Pseudo-classes
-* [ ] `:hover`
-* [ ] `:focus`
-* [ ] Box Model
-* [ ] `margin`
-* [ ] `padding`
-* [ ] `border`
-* [ ] `width`
-* [ ] `height`
-* [ ] Variáveis CSS
-* [ ] Unidades relativas e absolutas
+* [x] Seletores por classe
+* [x] Seletores descendentes
+* [x] Pseudo-classes
+* [x] `:hover`
+* [x] `:focus-visible`
+* [x] Box Model
+* [x] `margin`
+* [x] `padding`
+* [x] `border`
+* [x] `width`
+* [x] `height`
+* [x] Variáveis CSS
+* [x] Unidades relativas e absolutas
 
 ### Justificativa
 
-Foram utilizadas classes para organizar e estilizar os componentes da página. Também serão utilizados seletores descendentes para aplicar estilos em elementos dentro de determinadas partes do site.
+Foram utilizadas classes para organizar e estilizar os componentes da página. Também foram utilizados seletores descendentes para aplicar estilos em elementos dentro de determinadas partes do site.
 
-Pseudo-classes como `:hover` e `:focus` serão utilizadas para representar diferentes estados de interação dos elementos.
+Pseudo-classes como `:hover` e `:focus-visible` foram utilizadas para representar diferentes estados de interação dos elementos.
 
-O Box Model será aplicado através de propriedades como `margin`, `padding`, `border`, `width` e `height`.
+O Box Model foi aplicado por meio de propriedades como `margin`, `padding`, `border`, `width` e `height`.
 
-As principais cores e valores reutilizados serão organizados através de variáveis CSS dentro de `:root`, facilitando a manutenção e a organização do código.
+As principais cores reutilizadas foram organizadas por meio de variáveis CSS dentro de `:root`, facilitando a manutenção e a organização do código.
 
 ---
 
@@ -123,23 +127,23 @@ As principais cores e valores reutilizados serão organizados através de variá
 
 ### Checklist
 
-* [ ] Desenvolvimento utilizando Mobile First
-* [ ] Flexbox
-* [ ] CSS Grid
-* [ ] Media query com `min-width`
-* [ ] Layout adaptado para celular
-* [ ] Layout adaptado para desktop
-* [ ] Teste em diferentes tamanhos de tela
+* [x] Desenvolvimento utilizando Mobile First
+* [x] Flexbox
+* [x] CSS Grid
+* [x] Media query com `min-width`
+* [x] Layout adaptado para celular
+* [x] Layout adaptado para desktop
+* [x] Teste em diferentes tamanhos de tela
 
 ### Justificativa
 
-O desenvolvimento do CSS será realizado utilizando a abordagem **Mobile First**, começando pela organização dos elementos para telas menores.
+O desenvolvimento do CSS foi realizado utilizando a abordagem **Mobile First**, começando pela organização dos elementos para telas menores.
 
-O **Flexbox** será utilizado para organizar elementos como o cabeçalho, a navegação e outros componentes da página.
+O **Flexbox** foi utilizado para organizar elementos como o cabeçalho, a navegação, o formulário e os benefícios em diferentes situações de layout.
 
-O **CSS Grid** será utilizado principalmente na organização dos blocos de benefícios e outras áreas que necessitem de uma estrutura em colunas.
+O **CSS Grid** foi utilizado principalmente na organização da estrutura dos benefícios e do rodapé.
 
-Para telas maiores, será utilizada uma media query com `min-width`, permitindo reorganizar e distribuir melhor os elementos no desktop.
+Para telas maiores, foi utilizada uma media query com `min-width`, permitindo reorganizar e distribuir melhor os elementos no desktop.
 
 ---
 
@@ -147,14 +151,14 @@ Para telas maiores, será utilizada uma media query com `min-width`, permitindo 
 
 ### Checklist
 
-* [ ] Adição de elemento próprio que não existe no site original
-* [ ] Personalização de algum componente da página
+* [x] Adição de elemento próprio que não existe no site original
+* [x] Personalização de algum componente da página
 
 ### Justificativa
 
-Será adicionada uma pequena personalização ao projeto para atender ao requisito de originalidade solicitado na atividade.
+Foi adicionado um **timer de estudos de 25 minutos** na seção principal da página.
 
-A personalização será integrada ao layout sem prejudicar a identidade visual do Spotify e servirá para diferenciar o projeto da página original.
+O usuário pode iniciar, pausar e reiniciar o timer para organizar uma sessão de estudos. A funcionalidade foi desenvolvida com JavaScript e integrada ao layout da página como uma personalização própria do projeto, relacionada ao público estudantil.
 
 ---
 
@@ -162,16 +166,17 @@ A personalização será integrada ao layout sem prejudicar a identidade visual 
 
 ## Histórico de desenvolvimento
 
-O desenvolvimento do projeto será registrado utilizando Git, com commits realizados durante as diferentes etapas da construção da página.
+O desenvolvimento do projeto foi registrado utilizando Git, com commits realizados durante as diferentes etapas da construção da página.
 
 ### Checklist
 
-* [ ] Pelo menos 8 commits
-* [ ] Commits realizados em pelo menos 3 dias diferentes
-* [ ] Commits descrevendo as alterações realizadas
-* [ ] `index.html` na raiz do repositório
-* [ ] `style.css` na raiz do repositório
-* [ ] `README.md` na raiz do repositório
+* [x] Pelo menos 8 commits
+* [x] Commits realizados em pelo menos 3 dias diferentes
+* [x] Commits descrevendo as alterações realizadas
+* [x] `index.html` na raiz do repositório
+* [x] `style.css` na raiz do repositório
+* [x] `README.md` na raiz do repositório
+* [x] `script.js` na raiz do repositório
 
 ---
 
@@ -179,14 +184,27 @@ O desenvolvimento do projeto será registrado utilizando Git, com commits realiz
 
 ```text
 ProjetoSpotifyStudent/
+
 │
 ├── index.html
 ├── style.css
+├── script.js
 ├── README.md
 │
 └── img/
+    ├── logo-spotify.webp
+    ├── sem-anuncio.png
+    ├── ouca-offline.png
+    ├── musica-todos-momentos.png
+    ├── qualidade-musica.png
     ├── SiteOriginal1.png
-    └── SiteResultado1.png
+    ├── SiteOriginal2.png
+    ├── SiteOriginal3.png
+    ├── SiteOriginal4.png
+    ├── siteDesenvolvido1.png
+    ├── siteDesenvolvido2.png
+    ├── siteDesenvolvido3.png
+    └── siteDesenvolvido4.png
 ```
 
 ---
@@ -201,4 +219,6 @@ A página utilizada como referência pode ser acessada pelo link:
 
 # Observação
 
-Este projeto é uma reprodução acadêmica da página **Spotify Premium para Estudantes**, utilizada como referência para o desenvolvimento do site. O projeto busca reproduzir sua estrutura e seus principais elementos visuais utilizando HTML e CSS.
+Este projeto é uma reprodução acadêmica da página **Spotify Premium para Estudantes**, utilizada como referência para o desenvolvimento do site.
+
+O projeto foi desenvolvido do zero utilizando HTML, CSS e JavaScript, buscando reproduzir a estrutura e os principais elementos visuais da página de referência, além de incluir uma personalização própria por meio do timer de estudos.
