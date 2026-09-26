@@ -29,6 +29,7 @@ header {
     padding: 50px 24px;
 }
 
+/* Limita a largura do conteúdo do menu e mantém o cabeçalho centralizado em telas maiores. */
 header nav {
     display: flex;
     flex-direction: column;
@@ -38,6 +39,7 @@ header nav {
     margin: 0 auto;
 }
 
+/* O logo fica alinhado separadamente para facilitar a organização do cabeçalho em diferentes larguras. */
 header nav .logo {
     transform: none;
     align-self: flex-start;
@@ -59,6 +61,7 @@ header nav .logo span {
     font-weight: 700;
 }
 
+/* Permite que os links se reorganizem em mais de uma linha quando o espaço horizontal é limitado. */
 header nav div {
     display: flex;
     flex-direction: row;
@@ -81,6 +84,7 @@ header nav div a:hover {
     color: #1ed760;
 }
 
+/* Mostra o foco principalmente na navegação por teclado, melhorando a acessibilidade. */
 header nav div a:focus-visible {
     outline: 2px solid #1ed760;
     outline-offset: 4px;
@@ -91,8 +95,10 @@ header nav div a:focus-visible {
     display: none;
 }
 
+/* Em telas a partir de 768px, o layout passa para uma organização própria para tablets e desktops. */
 @media (min-width: 768px) {
 
+    /* Reduz o padding vertical no desktop para deixar o cabeçalho mais compacto. */
     header {
         padding: 20px 24px;
     }
@@ -105,10 +111,12 @@ header nav div a:focus-visible {
         margin: 0 auto;
     }
 
+    /* Ajuste visual do logo para alinhá-lo com a posição desejada no cabeçalho desktop. */
     header nav .logo {
         transform: translateX(-135px);
     }
 
+    /* Compensa visualmente a posição do grupo de links para manter o cabeçalho equilibrado. */
     header nav div {
         transform: translateX(95px);
         flex-direction: row;
@@ -139,6 +147,7 @@ header nav div a:focus-visible {
     color: #000000;
 }
 
+/* No celular, uma coluna deixa os benefícios empilhados e facilita a leitura. */
 .beneficios-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -155,6 +164,7 @@ header nav div a:focus-visible {
     padding: 0;
 }
 
+/* object-fit: contain preserva a proporção das imagens dentro do espaço definido. */
 .beneficio img {
     width: 110px;
     height: 110px;
@@ -163,6 +173,7 @@ header nav div a:focus-visible {
     margin-bottom: 8px;
 }
 
+/* A altura mínima evita que títulos com quantidades diferentes de linhas desalinhem os textos dos cards. */
 .beneficio h3 {
     width: 220px;
     min-height: 44px;
@@ -182,6 +193,7 @@ header nav div a:focus-visible {
 
 @media (min-width: 768px) {
 
+    /* No desktop, os benefícios passam a ficar lado a lado. */
     .beneficios {
         padding: 80px 40px;
     }
@@ -250,6 +262,7 @@ header nav div a:focus-visible {
     color: #000000;
 }
 
+/* O link é transformado visualmente em um botão de chamada para ação. */
 .hero a {
     display: inline-block;
     padding: 14px 28px;
@@ -263,10 +276,12 @@ header nav div a:focus-visible {
     transition: transform 0.2s ease;
 }
 
+/* Pequeno aumento de escala fornece retorno visual ao passar o mouse sem alterar o layout. */
 .hero a:hover {
     transform: scale(1.03);
 }
 
+/* O contorno deixa o botão perceptível quando recebe foco, inclusive durante navegação por teclado. */
 .hero a:focus {
     outline: 2px solid #000000;
     outline-offset: 4px;
@@ -323,6 +338,7 @@ header nav div a:focus-visible {
     color: #000000;
 }
 
+/* Define uma largura confortável para leitura e separa cada pergunta visualmente com uma linha. */
 .faq-item {
     max-width: 900px;
     margin: 0 auto;
@@ -345,6 +361,7 @@ header nav div a:focus-visible {
 }
 
 @media (min-width: 768px) {
+    /* Aumenta os espaçamentos no desktop para aproveitar a área disponível. */
     .faq {
         padding: 80px 40px;
     }
@@ -378,6 +395,7 @@ footer {
     color: #ffffff;
 }
 
+/* Grid em uma coluna no mobile; a quantidade de colunas é ampliada no desktop pela media query. */
 .footer-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -399,6 +417,7 @@ footer {
     text-transform: uppercase;
 }
 
+/* fit-content evita que a área clicável ocupe toda a largura da coluna desnecessariamente. */
 .footer-container a {
     width: fit-content;
     color: #ffffff;
@@ -429,6 +448,7 @@ footer {
     color: #ffffff;
 }
 
+/* No mobile, os campos ficam empilhados; no desktop, a media query os coloca lado a lado. */
 .formulario form {
     display: flex;
     flex-direction: column;
@@ -450,6 +470,7 @@ footer {
     font-size: 14px;
 }
 
+/* Destaca o campo ativo para indicar claramente onde o usuário está digitando. */
 .formulario input:focus {
     outline: 2px solid #1ed760;
     outline-offset: 2px;
@@ -477,6 +498,7 @@ footer {
     color: #1ed760;
 }
 
+/* flex-wrap permite que os links legais quebrem de linha quando não houver espaço suficiente. */
 .footer-legal {
     display: flex;
     flex-wrap: wrap;
@@ -523,6 +545,7 @@ footer > p {
 
 
 @media (min-width: 768px) {
+    /* O rodapé passa de uma coluna para quatro colunas em telas maiores. */
     footer {
         padding: 80px 40px 40px;
     }
@@ -558,6 +581,7 @@ footer > p {
 
 /* TIMER DE ESTUDOS */
 
+/* O timer recebe um fundo semitransparente para se destacar sem esconder completamente a cor da seção. */
 .timer-estudo {
     max-width: 320px;
     margin: 30px auto 0;
@@ -580,6 +604,7 @@ footer > p {
     color: var(--preto);
 }
 
+/* Os botões podem quebrar de linha para continuarem utilizáveis em telas estreitas. */
 .timer-botoes {
     display: flex;
     justify-content: center;
@@ -602,11 +627,13 @@ footer > p {
     transform: scale(1.03);
 }
 
+/* Mantém um indicador de foco visível para quem navega pelo timer usando o teclado. */
 .timer-botoes button:focus {
     outline: 2px solid var(--verde);
     outline-offset: 3px;
 }
 
+/* min-height evita que a mensagem altere o posicionamento dos elementos quando aparece ou desaparece. */
 #mensagem-timer {
     min-height: 18px;
     margin-top: 8px;
