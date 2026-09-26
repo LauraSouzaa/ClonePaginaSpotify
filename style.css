@@ -81,7 +81,7 @@ header nav div a:hover {
     color: #1ed760;
 }
 
-header nav div a:focus {
+header nav div a:focus-visible {
     outline: 2px solid #1ed760;
     outline-offset: 4px;
 }
