@@ -623,3 +623,62 @@ footer > p {
         width: 300px;
     }
 }
+
+/* TIMER DE ESTUDOS */
+
+.timer-estudo {
+    max-width: 320px;
+    margin: 30px auto 0;
+    padding: 18px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.22);
+    text-align: center;
+}
+
+.timer-estudo h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: var(--preto);
+}
+
+#tempo {
+    margin-bottom: 12px;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--preto);
+}
+
+.timer-botoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.timer-botoes button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--preto);
+    color: var(--branco);
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.timer-botoes button:hover {
+    transform: scale(1.03);
+}
+
+.timer-botoes button:focus {
+    outline: 2px solid var(--verde);
+    outline-offset: 3px;
+}
+
+#mensagem-timer {
+    min-height: 18px;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--preto);
+}
