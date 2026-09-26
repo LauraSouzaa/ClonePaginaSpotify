@@ -410,8 +410,8 @@ footer {
     color: #1ed760;
 }
 
-.footer-container a:focus {
-    outline: 2px solid #1ed760;
+.footer-container a:focus-visible {
+    outline: 2px solid var(--verde);
     outline-offset: 4px;
 }
 
